@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680" height="300" viewBox="0 0 680 300">
+  <rect x="0" y="0" width="680" height="300" fill="white"/>
+  <defs>
+    <clipPath id="waveClip"><rect x="0" y="0" width="680" height="300"/></clipPath>
+  </defs>
+  <g clip-path="url(#waveClip)">
+    <path d="M -680 150 C -650 60, -620 60, -590 150 C -560 240, -530 240, -500 150 C -470 60, -440 60, -410 150 C -380 240, -350 240, -320 150 C -290 60, -260 60, -230 150 C -200 240, -170 240, -140 150 C -110 60, -80 60, -50 150 C -20 240, 10 240, 40 150 C 70 60, 100 60, 130 150 C 160 240, 190 240, 220 150 C 250 60, 280 60, 310 150 C 340 240, 370 240, 400 150 C 430 60, 460 60, 490 150 C 520 240, 550 240, 580 150 C 610 60, 640 60, 670 150 C 700 240, 730 240, 760 150 C 790 60, 820 60, 850 150 C 880 240, 910 240, 940 150 C 970 60, 1000 60, 1030 150 C 1060 240, 1090 240, 1120 150 C 1150 60, 1180 60, 1210 150 C 1240 240, 1270 240, 1300 150 C 1330 60, 1360 60, 1360 150"
+      fill="none" stroke="#000000" stroke-width="3" stroke-linecap="round">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="180 0" dur="1.5s" repeatCount="indefinite" calcMode="linear"/>
+    </path>
+  </g>
+</svg>

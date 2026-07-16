@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mihir | Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <ul>
+            <li>
+                <h2 class="logo">M<div class="dot"></div>Y</h2>
+            </li>
+            <li class="menu">
+                <span>Work</span>
+                <span>About</span>
+                <span>Menu</span>
+                <span>Contact</span>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="mobileNav">
+        <ul>
+            <li class="menuHeader">
+                <h2 class="logoSmallScreen">MY</h2>
+                <div class="closeBtn" onclick="toggleMenu()">
+                    <img src="./closeBtn.svg" alt="menu" class="menuIcons">
+                </div>
+            </li>
+            <li class="menu">
+                <span>Work</span>
+                <span>About</span>
+                <span>Menu</span>
+                <span>Contact</span>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="smooth-wrapper">
+        <div id="smooth-content">
+            <!-- Hero -->
+            <main class="mainContainer">
+                <div class="menuHamburger" onclick="toggleMenu()">
+                    <img src="./hamburger.svg" alt="menu" class="menuIcons">
+                </div>
+
+                <section class="hero">
+                    <div class="heroTop">
+                        <div class="animationWrapper">
+                            <h1 class="mainFont heroText">Des<span class="flipChar">i</span>gn</h1>
+                            <img src="./star.svg" alt="star" id="star">
+                        </div>
+
+                        <p class="tagline">That Matters</p>
+                    </div>
+                    <div class="cards">
+                        <div class="card" id="card-1"> </div>
+                        <div class="card" id="card-2"></div>
+                        <div class="card" id="card-4"></div>
+                        <div class="card" id="card-3"></div>
+                    </div>
+                    <div class="mobileMarquee">
+                        <p>Designing and Developing Digital Experiences that feel good.</p>
+                    </div>
+                    <div class="heroBottom">
+                        <div class="date">Date : </div>
+                        <div class="bottomRight">
+                            <div class="leadWord">Frontend</div>
+                            <div class="changing"> <span class="word"> </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- About Me -->
+            <section class="section about">
+                <div class="aboutContent">
+                    <hr>
+                    <h2>About Me</h2>
+                    <p class="aboutParagraph">I thrive at the intersection of creativity and technology. <br>Whether
+                        it's shaping an idea, designing meaningful interactions or bringing them to life with code, I
+                        care about every detail.</p>
+                    <div id="aboutDescWrapper">
+                        <img src="./flower.svg" width="100" alt="flower" id="flower">
+                        <p class="aboutDescription">Half layouts and color, half logic and motion — built start to
+                            finish , by one person.</p>
+                    </div>
+                </div>
+                <div class="aboutImg">
+                    <img src="https://images.pexels.com/photos/17136623/pexels-photo-17136623.jpeg" id="aboutImg" />
+
+                </div>
+            </section>
+
+            <!-- Quote Section -->
+            <section class="quote">
+                <img src="./circle.svg" alt="circle" class="interaction" id="circle">
+                <div class="quoteFlow">
+                    <div class="wrapper">
+                        <span class="quoteWord">Good</span>
+                        <span class="quoteWord">Design is</span>
+                        <span class="quoteWord">hard</span>
+                        <span class="quoteWord">to notice</span>
+                        <span class="quoteWord">because</span>
+                        <span class="quoteWord">it fits our</span>
+                        <span class="quoteWord">needs so well</span>
+                        <span class="quoteWord">that design</span>
+                        <span class="quoteWord">is invisible.</span>
+                    </div>
+                    <div class="mobileQuoteImg">
+                        <video src="./mobileQuoteVid.webm" autoplay loop></video>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MOVING MARQUEE -->
+            <section class="marquee">
+                <div class="marqueeContainer">
+                    <h1>Creativity</h1>
+                    <!-- <div class="gola"></div> -->
+                    <img src="./halfcircle.svg" width="150" alt="halfcircle" class="interaction">
+                    <h1>Design</h1>
+                    <div class="gola"></div>
+                    <h1>UX</h1>
+                    <img src="./square.svg" width="120" alt="square" class="interaction">
+                    <h1>Code</h1>
+                    <img src="./flower.svg" width="120" alt="flower" class="interaction">
+                    <h1>Front-end</h1>
+                    <img src="./clover.svg" width="120" alt="clover" class="interaction">
+
+                </div>
+                <div class="marqueeContainer">
+                    <h1>Creativity</h1>
+                    <div class="gola"></div>
+                    <h1>Design</h1>
+                    <div class="gola"></div>
+                    <h1>UX</h1>
+                    <div class="gola"></div>
+                    <h1>Code</h1>
+                    <div class="gola"></div>
+                    <h1>Front-end</h1>
+                    <div class="gola"></div>
+                </div>
+                <div class="marqueeContainer">
+                    <h1>Creativity</h1>
+                    <div class="gola"></div>
+                    <h1>Design</h1>
+                    <div class="gola"></div>
+                    <h1>UX</h1>
+                    <div class="gola"></div>
+                    <h1>Code</h1>
+                    <div class="gola"></div>
+                    <h1>Front-end</h1>
+                    <div class="gola"></div>
+                </div>
+            </section>
+
+            <!-- Featured Projects -->
+            <section class="featured">
+                <div class="featuredHeader">
+                    <span class="smallFont featuredLabel">Selected Work</span>
+                    <h2 class="mainFont featuredTitle">Featured</h2>
+                    <span class="smallFont featuredCount">(04)</span>
+                </div>
+
+                <div class="projectList">
+                    <div class="projectImage"></div>
+
+                    <div class="projectRow" data-image="./sundown.webp">
+                        <span class="smallFont rowIndex">01</span>
+                        <h3 class="mainFont rowTitle">Sundown Studio</h3>
+                        <span class="smallFont rowTag">Concept Website</span>
+                        <span class="smallFont rowYear">2025</span>
+                        <span class="rowArrow">→</span>
+                    </div>
+
+                    <div class="projectRow" data-image="./rosa.webp">
+                        <span class="smallFont rowIndex">02</span>
+                        <h3 class="mainFont rowTitle">X2Y</h3>
+                        <span class="smallFont rowTag">Generative Layout Engine</span>
+                        <span class="smallFont rowYear">2025</span>
+                        <span class="rowArrow">→</span>
+                    </div>
+                    <div class="projectRow" data-image="./x2y.webp">
+                        <span class="smallFont rowIndex">04</span>
+                        <h3 class="mainFont rowTitle">Music Studio</h3>
+                        <span class="smallFont rowTag">Voice-Reactive Interface</span>
+                        <span class="smallFont rowYear">2024</span>
+                        <span class="rowArrow">→</span>
+                    </div>
+
+                    <div class="projectRow" data-image="./miranda.webp">
+                        <h3 class="mainFont rowTitle">Miranda</h3>
+                        <span class="smallFont rowTag">Paperfolio Web Anime Concept Design</span>
+                        <span class="smallFont rowYear">2024</span>
+                    </div>
+
+
+                </div>
+                <div class="mobileFeatured">
+                    <div class="projectContainer">
+                        <img src="./miranda.webp" alt="Miranda">
+                        <div class="projectContent">
+                            <h3>Miranda Anime</h3>
+                            <span>Design Concept</span>
+                            <span>2024</span>
+                        </div>
+                    </div>
+                    <div class="projectContainer">
+                        <img src="./sundown.webp" alt="sundown studio">
+                        <div class="projectContent">
+                            <h3>Sundown Studio</h3>
+                            <span>Design Concept</span>
+                            <span>2025</span>
+                        </div>
+                    </div>
+                    <div class="projectContainer">
+                        <img src="./rosa.webp" alt="Rosa Hotels">
+                        <div class="projectContent">
+                            <h3>Rosa Hotels</h3>
+                            <span>Design Concept</span>
+                            <span>2025</span>
+                        </div>
+                    </div>
+                    <div class="projectContainer">
+                        <img src="./x2y.webp" alt="x2y">
+                        <div class="projectContent">
+                            <h3>X2Y Music Studio</h3>
+                            <span>Design Concept</span>
+                            <span>2025</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="contactTitleWrapper">
+                    <h2 class="contactTitle">Get <span class="flipChar">I</span>n Touch</h2>
+                    <img src="./flower.svg" alt="flower">
+                </div>
+                <div class="contactLink">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Projects</li>
+                        <li>Home</li>
+                    </ul>
+                </div>
+                <hr>
+                <div class="contactBottom">
+                    <div class="email">
+                        <a href="mailto:yadavmihir30@gmail.com">
+                            <img src="./email.svg" alt="Email" width="30">
+                        </a>
+                    </div>
+
+                    <div class="contactNo">
+                        <a href="tel:+917767043214">
+                            <img src="./call.svg" alt="Call" width="30">
+                        </a>
+                    </div>
+
+                    <!-- <div class="instagram">
+                        <a href="https://www.instagram.com/yourusername/" target="_blank" rel="noopener noreferrer">
+                            <img src="./instagram.svg" alt="Instagram" width="30">
+                        </a>
+                    </div> -->
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+    <!-- GSAP  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Scroll Trigger   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"
+        integrity="sha512-t4hwZimhnCKT3YLAsEcAcRDkngVFfCcUIfNLIjklrIZAZKD+GfQMP7HbRcsVHxNS48WRBSywNU1uSM2zzLQt1Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Split Text -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+        integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Text PLUGIN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/TextPlugin.min.js"
+        integrity="sha512-8BkFnMa5pqmphA7XoSbkjP2qX7Gqlkel2C+p1g1AH1tW4cBJs2tumC0Zn9eNRBOKbe3dW9OtbYh/vpkGuZNTMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
