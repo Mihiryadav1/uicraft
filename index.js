@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger, SplitText, TextPlugin, ScrollSmoother);
 const smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
-  smooth: 1.2, 
-  effects: true,  
-  normalizeScroll: true,  
+  smooth: 1.2,
+  effects: true,
+  normalizeScroll: true,
 });
 
 document.fonts.ready.then(() => {
@@ -251,13 +251,6 @@ const toggleMenu = () => {
   mobileNav.classList.toggle("translateY");
   body.classList.toggle("hiddenBody");
 };
-const mobileMenuLinks = document.querySelectorAll(".mobileNav .menu a");
-
-// mobileMenuLinks.forEach((link) => {
-//   link.addEventListener("click", () => {
-//     toggleMenu();
-//   });
-// });
 
 //Calls
 heroCards();
