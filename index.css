@@ -711,12 +711,7 @@ hr {
         height: 30vh
     }
 
-    .cards {
-        /* background-color: red; */
-        width: 100%;
-        height: 100%;
-        margin-top: 1rem;
-    }
+
 
     .heroText {
         font-size: 15vw;
@@ -729,20 +724,22 @@ hr {
 
 
     .hero {
-
+        height: 100vh;
         padding: 1rem;
     }
 
     .tagline {
         font-size: 7vw;
-
         width: 100%;
         left: 0;
         text-align: center;
         position: relative;
     }
 
+
     .cards {
+        margin-top: 1rem;
+        width: 100%;
         height: 50%;
         position: relative;
         background-size: cover;
