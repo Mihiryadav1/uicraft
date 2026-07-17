@@ -7,9 +7,9 @@ gsap.registerPlugin(ScrollTrigger, SplitText, TextPlugin, ScrollSmoother);
 const smoother = ScrollSmoother.create({
   wrapper: "#smooth-wrapper",
   content: "#smooth-content",
-  smooth: 1.2, // adjust feel — higher = more lag/smoothness
-  effects: true, // enables data-speed / data-lag attributes
-  normalizeScroll: true, // prevents address-bar jump on mobile
+  smooth: 1.2, 
+  effects: true,  
+  normalizeScroll: true,  
 });
 
 document.fonts.ready.then(() => {
@@ -234,12 +234,12 @@ dateEle.append(`${currentDate}`);
 const circle = document.querySelector("#circle");
 
 gsap.from("#circle", {
-  yPercent: -150,
-  xPercent: -120,
+  yPercent: -50,
+  xPercent: -10,
   scrollTrigger: {
-    trigeer: ".quote",
+    trigger: ".quote",
     start: "top 50%",
-    pin: true,
+    // pin: true,
     scrub: 2,
     // markers: true,
   },
@@ -253,11 +253,11 @@ const toggleMenu = () => {
 };
 const mobileMenuLinks = document.querySelectorAll(".mobileNav .menu a");
 
-mobileMenuLinks.forEach((link) => {
-  link.addEventListener("click", () => {
-    toggleMenu();
-  });
-});
+// mobileMenuLinks.forEach((link) => {
+//   link.addEventListener("click", () => {
+//     toggleMenu();
+//   });
+// });
 
 //Calls
 heroCards();
