@@ -251,6 +251,13 @@ const toggleMenu = () => {
   mobileNav.classList.toggle("translateY");
   body.classList.toggle("hiddenBody");
 };
+const mobileMenuLinks = document.querySelectorAll(".mobileNav .menu a");
+
+mobileMenuLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    toggleMenu();
+  });
+});
 
 //Calls
 heroCards();

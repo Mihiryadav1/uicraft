@@ -67,6 +67,10 @@ body {
     font-family: 'Satoshi';
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .section {
     /* background-color: lightgray; */
     width: 100%;
@@ -118,14 +122,16 @@ body {
     justify-content: space-between;
 }
 
-ul li,
+
+.navbar ul li,
 .logo {
     color: var(--offWhite);
     text-transform: capitalize;
     font-size: 1.2rem;
     font-family: "ClashLight";
 }
-.logo{
+
+.logo {
     display: flex;
     align-items: center;
     gap: 2px;
@@ -140,6 +146,11 @@ ul li,
     align-items: center;
     justify-content: space-between;
     gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--offWhite);
 }
 
 .mainContainer {
@@ -444,20 +455,20 @@ hr {
     display: block;
     text-transform: capitalize;
     letter-spacing: 0.15em;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
     font-family: "ClashRegular";
 }
 
 .featuredTitle {
-    font-size: 3.5vw;
+    font-size: 4vw;
     text-transform: uppercase;
     font-weight: 600;
 }
 
 .featuredCount {
     color: #888;
-    font-size: 0.8rem;
+    font-size: 1.22rem;
     font-family: "ClashRegular";
 }
 
@@ -679,18 +690,16 @@ hr {
         justify-content: center;
     }
 
-    .heroTop {
-        /* background-color: green;     */
-    }
+
 
     .hero {
-        /* background-color: yellow; */
+
         padding: 1rem;
     }
 
     .tagline {
         font-size: 7vw;
-        /* background-color: red;   */
+
         width: 100%;
         left: 0;
         text-align: center;
@@ -712,13 +721,14 @@ hr {
         display: block;
         position: relative;
         background-color: var(--offWhite);
-        height: 0;
+        /* height: 0; */
         transform: translateY(-100%);
-        transition: transform 0.5s ease;
+        transition: transform 0.4s ease;
     }
 
     .mobileNav.translateY {
         transform: translateY(0);
+        z-index: 100;
         height: 100vh;
     }
 
@@ -739,8 +749,6 @@ hr {
         align-items: center;
         justify-content: space-between;
         width: 100%;
-        position: absolute;
-        top: 0;
         padding: 1rem;
     }
 
@@ -748,24 +756,34 @@ hr {
         display: block;
     }
 
-    .mobileNav ul li {
-        margin-bottom: 2rem;
-    }
+
 
     .logoSmallScreen {
         display: block;
+
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
     }
 
-    .mobileNav ul li,
     .logoSmallScreen {
+        font-family: "ClashRegular";
+        color: var(--bg);
+        font-size: 8vw;
+
+    }
+
+    .mobileNav ul li a {
         font-size: 15vw;
         font-family: "ClashRegular";
         color: var(--bg);
+        margin-bottom: 2rem;
     }
 
     .menu {
         flex-direction: column;
     }
+
 
     .menuHamburger {
         background-color: var(--bg);
@@ -924,26 +942,30 @@ hr {
     }
 
     .contactTitleWrapper img {
-        display: none;
+        width: 10vw;
+        /* height: */
     }
 
     .contactTitle {
-        font-size: 12vw;
+        font-size: 10vw;
     }
 
     .contactLink ul {
         flex-direction: column;
-        /* background-color: green; */
-        /* align-items: flex-start; */
+
     }
 
     .contactLink ul li {
-        font-size: 8vw;
+        font-size: 6vw;
         width: 100%;
-        /* background-color: yellow; */
+
+        color: var(--offWhite);
         justify-content: flex-start;
     }
 
+    #star {
+        animation: rotate 4s linear infinite;
+    }
 
 
 }

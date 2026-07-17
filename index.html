@@ -16,10 +16,10 @@
                 <h2 class="logo">M<div class="dot"></div>Y</h2>
             </li>
             <li class="menu">
-                <span>Work</span>
-                <span>About</span>
-                <span>Menu</span>
-                <span>Contact</span>
+                <a href="#homeSection" onclick="toggleMenu()">Home</a>
+                <a href="#aboutSection">About</a>
+                <a href="#featuredSection">Work</a>
+                <a href="#contactSection">Contact</a>
             </li>
         </ul>
     </nav>
@@ -27,16 +27,16 @@
     <nav class="mobileNav">
         <ul>
             <li class="menuHeader">
-                <h2 class="logoSmallScreen">MY</h2>
+                <h2 class="logoSmallScreen">M<div class="dot"></div>Y</h2>
                 <div class="closeBtn" onclick="toggleMenu()">
                     <img src="./closeBtn.svg" alt="menu" class="menuIcons">
                 </div>
             </li>
             <li class="menu">
-                <span>Work</span>
-                <span>About</span>
-                <span>Menu</span>
-                <span>Contact</span>
+                <a href="#homeSection">Home</a>
+                <a href="#aboutSection">About</a>
+                <a href="#featuredSection">Work</a>
+                <a href="#contactSection">Contact</a>
             </li>
         </ul>
     </nav>
@@ -45,11 +45,11 @@
         <div id="smooth-content">
             <!-- Hero -->
             <main class="mainContainer">
-                <div class="menuHamburger" onclick="toggleMenu()">
-                    <img src="./hamburger.svg" alt="menu" class="menuIcons">
+                <div class="menuHamburger" >
+                    <img src="./hamburger.svg" alt="menu" class="menuIcons" onclick="toggleMenu()">
                 </div>
 
-                <section class="hero">
+                <section class="hero" id="homeSection">
                     <div class="heroTop">
                         <div class="animationWrapper">
                             <h1 class="mainFont heroText">Des<span class="flipChar">i</span>gn</h1>
@@ -78,7 +78,7 @@
             </main>
 
             <!-- About Me -->
-            <section class="section about">
+            <section class="section about" id="aboutSection">
                 <div class="aboutContent">
                     <hr>
                     <h2>About Me</h2>
@@ -98,7 +98,7 @@
             </section>
 
             <!-- Quote Section -->
-            <section class="quote">
+            <section class="quote" id="quoteSection">
                 <img src="./circle.svg" alt="circle" class="interaction" id="circle">
                 <div class="quoteFlow">
                     <div class="wrapper">
@@ -161,7 +161,7 @@
             </section>
 
             <!-- Featured Projects -->
-            <section class="featured">
+            <section class="featured" id="featuredSection">
                 <div class="featuredHeader">
                     <span class="smallFont featuredLabel">Selected Work</span>
                     <h2 class="mainFont featuredTitle">Featured</h2>
@@ -181,23 +181,25 @@
 
                     <div class="projectRow" data-image="./rosa.webp">
                         <span class="smallFont rowIndex">02</span>
-                        <h3 class="mainFont rowTitle">X2Y</h3>
-                        <span class="smallFont rowTag">Generative Layout Engine</span>
+                        <h3 class="mainFont rowTitle">Rosa Hotels</h3>
+                        <span class="smallFont rowTag">Hotel Website</span>
                         <span class="smallFont rowYear">2025</span>
                         <span class="rowArrow">→</span>
                     </div>
                     <div class="projectRow" data-image="./x2y.webp">
-                        <span class="smallFont rowIndex">04</span>
-                        <h3 class="mainFont rowTitle">Music Studio</h3>
-                        <span class="smallFont rowTag">Voice-Reactive Interface</span>
+                        <span class="smallFont rowIndex">03</span>
+                        <h3 class="mainFont rowTitle">X2y Music Studio</h3>
+                        <span class="smallFont rowTag">Entertainment Studio Design Page</span>
                         <span class="smallFont rowYear">2024</span>
                         <span class="rowArrow">→</span>
                     </div>
 
                     <div class="projectRow" data-image="./miranda.webp">
+                        <span class="smallFont rowIndex">04</span>
                         <h3 class="mainFont rowTitle">Miranda</h3>
-                        <span class="smallFont rowTag">Paperfolio Web Anime Concept Design</span>
+                        <span class="smallFont rowTag">Anime Concept Design</span>
                         <span class="smallFont rowYear">2024</span>
+                        <span class="rowArrow">→</span>
                     </div>
 
 
@@ -238,7 +240,7 @@
                 </div>
             </section>
 
-            <section class="contact">
+            <section class="contact" id="contactSection">
                 <div class="contactTitleWrapper">
                     <h2 class="contactTitle">Get <span class="flipChar">I</span>n Touch</h2>
                     <img src="./flower.svg" alt="flower">
