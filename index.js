@@ -5,7 +5,7 @@ const cardsContainer = document.querySelector(".hero");
 gsap.registerPlugin(ScrollTrigger, SplitText, TextPlugin, ScrollSmoother);
 
 const smoother = ScrollSmoother.create({
-  wrapper: "#smooth-wrapper",
+  wrapper: ".smooth-wrapper",
   content: "#smooth-content",
   smooth: 1.2,
   effects: true,

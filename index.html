@@ -17,10 +17,10 @@
                 <h2 class="logo">M<div class="dot"></div>Y</h2>
             </li>
             <li class="menu">
-                <span>Work</span>
-                <span>About</span>
-                <span>Menu</span>
-                <span>Contact</span>
+                <a href="#featuredSection">Featured</a>
+                <a href="#aboutSection">About</a>
+                <!-- <a href="">Testi</a> -->
+                <a href="#contactSection">Contact</a>
             </li>
         </ul>
     </nav>
@@ -34,15 +34,15 @@
                 </div>
             </li>
             <li class="menu">
-                <span>Work</span>
-                <span>About</span>
-                <span>Menu</span>
-                <span>Contact</span>
+                <a onclick="toggleMenu()" href="#featuredSection">Featured</a>
+                <span onclick="toggleMenu()" href="#aboutSection">About</span>
+                <!-- <span onclick="toggleMenu()" href="">Menu</span> -->
+                <span onclick="toggleMenu()" href="contactSection">Contact</span>
             </li>
         </ul>
     </nav>
 
-    <div class="smooth-wrapper">
+    <div class="smooth-wrapper" id="smooth-wrapper">
         <div id="smooth-content">
             <!-- Hero -->
             <main class="mainContainer">
@@ -276,10 +276,10 @@
         </div>
         <div class="contactLink">
             <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Work</li>
-                <li>Blog</li>
+                <li> <a href="#homeSection">Home</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <!-- <li><a href="contactSection">Contact</a></li> -->
+                <!-- <li>Blog</li> -->
             </ul>
         </div>
         <hr>
