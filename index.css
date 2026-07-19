@@ -745,6 +745,9 @@ ul li a:focus {
         text-align: center;
         position: relative;
     }
+    .menu a{
+        color: var(--bg);
+    }
 
 
     .cards {
