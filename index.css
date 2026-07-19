@@ -99,7 +99,7 @@ html {
     width: 100%;
 }
 
-.interaction:hover{
+.interaction:hover {
     transform: rotate(-30deg);
 }
 
@@ -712,7 +712,7 @@ ul li a:focus {
 
 
 
-@media (max-width:1000px) {
+@media (max-width:729px) {
     #star {
         width: 10vw;
     }
@@ -745,7 +745,8 @@ ul li a:focus {
         text-align: center;
         position: relative;
     }
-    .menu a{
+
+    .menu a {
         color: var(--bg);
     }
 
@@ -1024,4 +1025,31 @@ ul li a:focus {
     }
 
 
+}
+
+@media (max-width:1150px) {
+    .aboutParagraph {
+        max-width: 50%;
+    }
+    .aboutDescription{
+        max-width: 50%;
+    }
+
+    .card {
+        min-width: 420px;
+    }
+
+    .heroBottom div,
+    .date {
+        font-size: 2rem !important;
+    }
+    .aboutImg #aboutImg{
+        max-width: 80vw;
+    }
+    .quoteWord{
+        font-size:3vw
+    }
+    .quoteFlow{
+        max-width:80%
+    }
 }
