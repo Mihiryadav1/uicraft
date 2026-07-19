@@ -252,6 +252,21 @@ const toggleMenu = () => {
   body.classList.toggle("hiddenBody");
 };
 
+//Navbar color
+
+(() => {
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 795) {
+      document.querySelectorAll(".menuItems").forEach((menuItem) => {
+        menuItem.style.color = "#10100e";
+      });
+    } else {
+      document.querySelectorAll(".menuItems").forEach((menuItem) => {
+        menuItem.style.color = "#ffffe3";
+      });
+    }
+  });
+})();
 //Calls
 heroCards();
 scaleImage();
