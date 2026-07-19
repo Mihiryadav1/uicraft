@@ -99,7 +99,9 @@ html {
     width: 100%;
 }
 
-
+.interaction:hover{
+    transform: rotate(-30deg);
+}
 
 /* ---------------------- Custom CSS ----------------------- */
 
