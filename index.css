@@ -753,10 +753,11 @@ ul li a:focus {
 
     .cards {
         margin-top: 1rem;
-        width: 100%;
+        width: 80%;
         height: 50%;
         position: relative;
         background-size: cover;
+        background-position: center;
         background-image: url('https://images.pexels.com/photos/34765157/pexels-photo-34765157.jpeg');
     }
 
@@ -855,7 +856,8 @@ ul li a:focus {
     }
 
     .mobileMarquee p {
-        font-size: 6vw;
+        font-size: 7vw;
+        max-width: 80%;
         color: var(--offWhite);
         font-family: "ClashRegular";
     }
@@ -910,7 +912,7 @@ ul li a:focus {
     .quote {
         /* background-color: red; */
         align-items: flex-start;
-        min-height: 80vh
+        min-height: 50vh
     }
 
     .mobileQuoteImg {
@@ -926,7 +928,7 @@ ul li a:focus {
 
     .mobileQuoteImg video {
         width: 100%;
-        border-radius: 40px;
+        border-radius: 1rem;
     }
 
     .quoteWord {
@@ -970,6 +972,7 @@ ul li a:focus {
         cursor: pointer;
         flex-direction: column;
         justify-content: center;
+        margin-bottom: 2rem;
     }
 
     .projectLinks {
@@ -987,10 +990,16 @@ ul li a:focus {
         margin-bottom: 2rem;
         text-decoration: none;
         color: var(--bg);
+
+        & span {
+            font-size: 5vw;
+            font-family: "ClashLight";
+            font-weight: 500;
+        }
     }
 
     .projectContent h3 {
-        font-size: 7vw;
+        font-size: 8vw;
         text-decoration: none;
     }
 
@@ -1024,15 +1033,20 @@ ul li a:focus {
         animation: rotate 4s linear infinite;
     }
 
+    #aboutSection {
+        min-height: 90vh;
+    }
+
 
 }
 
 @media (max-width:1150px) {
     .aboutParagraph {
-        max-width: 50%;
+        max-width: 100%;
     }
-    .aboutDescription{
-        max-width: 50%;
+
+    .aboutDescription {
+        max-width: 100%;
     }
 
     .card {
@@ -1043,13 +1057,16 @@ ul li a:focus {
     .date {
         font-size: 2rem !important;
     }
-    .aboutImg #aboutImg{
-        max-width: 80vw;
+
+    .aboutImg #aboutImg {
+        max-width: 90vw;
     }
-    .quoteWord{
-        font-size:3vw
+
+    .quoteWord {
+        font-size: 6vw
     }
-    .quoteFlow{
-        max-width:80%
+
+    .quoteFlow {
+        max-width: 100%
     }
 }
