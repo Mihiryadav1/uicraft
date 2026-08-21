@@ -24,7 +24,7 @@
             </li>
         </ul>
     </nav>
-
+    <!-- Mobile Nav -->
     <nav class="mobileNav">
         <ul>
             <li class="menuHeader">
@@ -51,41 +51,32 @@
                 </div>
 
                 <section class="hero">
-                    <div class="heroTop">
-                        <div class="animationWrapper">
-                            <h1 class="mainFont heroText">Des<span class="flipChar">i</span>gn</h1>
-                            <img src="./star.svg" alt="star" id="star">
-                        </div>
-
-                        <p class="tagline">That Matters</p>
-                    </div>
                     <div class="cards">
-                        <div class="card" id="card-1"> </div>
-                        <div class="card" id="card-2"></div>
-                        <div class="card" id="card-4"></div>
-                        <div class="card" id="card-3"></div>
+                        <h1 class="mainFont heroText">Des<span class="flipChar">i</span>gn</h1>
+                        <div class="card">
+                            <h2>that</h2>
+                        </div>
+                        <h1 class="mainFont heroTextBottom"> Matters</h1>
                     </div>
-                    <div class="mobileMarquee">
-                        <p>Designing and Developing Digital Experiences that feel good.</p>
-                    </div>
-                    <div class="heroBottom">
-                        <div class="date">Date : </div>
+
+                    <!-- <div class="heroBottom">
                         <div class="bottomRight">
                             <div class="leadWord">Frontend</div>
                             <div class="changing"> <span class="word"> </div>
                         </div>
-                    </div>
+                    </div> -->
                 </section>
             </main>
 
             <!-- About Me -->
             <section class="section about" id="aboutSection">
+                <div class="absouluteLetter">M</div>
                 <div class="aboutContent">
-                    <hr>
                     <h2>About Me</h2>
                     <p class="aboutParagraph">I thrive at the intersection of creativity and technology. <br>Whether
                         it's shaping an idea, designing meaningful interactions or bringing them to life with code, I
-                        care about every detail.</p>
+                        care about every detail.</p> <br>
+                    <button class="secondaryBtn">Resume</button>
                     <div id="aboutDescWrapper">
                         <img src="./flower.svg" width="100" alt="flower" id="flower">
                         <p class="aboutDescription">Half layouts and color, half logic and motion — built start to
@@ -98,9 +89,99 @@
                 </div>
             </section>
 
+
+            <!-- Work Experience -->
+            <section class="workEx" id="workexSection">
+                <div class="workHeader">
+                    <h2 class="mainFont featuredTitle">WorkEx</h2>
+                    <span class="smallFont workDescription">A few chapters along the way. A little untidy, the way a
+                        real career actually is.</span>
+                    <span class="smallFont featuredCount">(04)</span>
+                </div>
+
+                <div class="workList">
+                    <a href="https://sundownstudiodesign.netlify.app/" target="_blank"
+                        class="projectLinks projectRowContainer">
+                        <div class="workRow" data-image="./sundown.webp">
+                            <h3 class="mainFont workTitle">Software Developer - Frontend</h3>
+                            <span class="smallFont workYear">Feb 2024 - Present</span>
+                        </div>
+                    </a>
+                    <a href="https://sundownstudiodesign.netlify.app/" target="_blank"
+                        class="projectLinks projectRowContainer">
+                        <div class="workRow" data-image="./sundown.webp">
+                            <h3 class="mainFont workTitle">Software Test Engineer - Automation</h3>
+                            <span class="smallFont workYear">June 2024 - April 2025</span>
+                        </div>
+                    </a>
+
+                    <a href="https://rosahotels.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
+                        <div class="workRow" data-image="./rosa.webp">
+                            <h3 class="mainFont workTitle">Summer Intern - Frontend</h3>
+                            <span class="smallFont workYear">Aug 2023 - Sept 2023</span>
+                        </div>
+                    </a>
+                    <a href="https://rosahotels.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
+                        <div class="workRow" data-image="./rosa.webp">
+                            <h3 class="mainFont workTitle">Freelance Frontend Developer</h3>
+                            <span class="smallFont workYear">Jan 2021 - Nov 2022</span>
+                        </div>
+                    </a>
+
+
+
+
+                </div>
+
+                <div class="mobileFeatured">
+                    <a href="https://mirandaanime.netlify.app/" class="projectLinks">
+                        <div class="projectContainer">
+                            <img src="./miranda.webp" alt="Miranda">
+                            <div class="projectContent">
+                                <h3>Miranda Anime</h3>
+                                <span>Design Concept</span>
+                                <span>2024</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://sundownstudiodesign.netlify.app/" class="projectLinks">
+                        <div class="projectContainer">
+                            <img src="./sundown.webp" alt="sundown studio">
+                            <div class="projectContent">
+                                <h3>Sundown Studio</h3>
+                                <span>Design Concept</span>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://rosahotels.netlify.app/" class="projectLinks">
+                        <div class="projectContainer">
+                            <img src="./rosa.webp" alt="Rosa Hotels">
+                            <div class="projectContent">
+                                <h3>Rosa Hotels</h3>
+                                <span>Design Concept</span>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://x2ystudio.netlify.app/" class="projectLinks">
+                        <div class="projectContainer">
+                            <img src="./x2y.webp" alt="x2y">
+                            <div class="projectContent">
+                                <h3>X2Y Music Studio</h3>
+                                <span>Design Concept</span>
+                                <span>2025</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
             <!-- Quote Section -->
             <section class="quote" id="quoteSection">
-                <img src="./circle.svg" alt="circle" class="interaction" id="circle">
+                <img src="./circle_2.svg" alt="circle" class="interaction" id="circle">
                 <div class="quoteFlow">
                     <div class="wrapper">
                         <span class="quoteWord">Good</span>
@@ -148,7 +229,8 @@
                     <h1>Front-end</h1>
                     <img src="./clover.svg" width="120" alt="clover" class="interaction">
 
-                </div> <div class="marqueeContainer">
+                </div>
+                <div class="marqueeContainer">
                     <h1>Creativity</h1>
                     <!-- <div class="gola"></div> -->
                     <img src="./halfcircle.svg" width="150" alt="halfcircle" class="interaction">
@@ -162,6 +244,12 @@
                     <img src="./clover.svg" width="120" alt="clover" class="interaction">
 
                 </div>
+            </section>
+
+            <!-- Page Design Seperator -->
+
+            <section class="designPageSeperator section">
+
             </section>
 
             <!-- Featured Projects -->
@@ -182,45 +270,27 @@
                             <h3 class="mainFont rowTitle">Sundown Studio</h3>
                             <span class="smallFont rowTag">Concept Website</span>
                             <span class="smallFont rowYear">2025</span>
-                            <span class="rowArrow" target="_blank"><span>→</span>
                     </a>
                 </div>
-                </a>
-
+                
                 <a href="https://rosahotels.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
 
                     <div class="projectRow" data-image="./rosa.webp">
                         <span class="smallFont rowIndex">02</span>
                         <h3 class="mainFont rowTitle">Rosa Hotels</h3>
-                        <span class="smallFont rowTag">Hotel Website</span>
+                        <span class="smallFont rowTag">Concept Hotel Website</span>
                         <span class="smallFont rowYear">2025</span>
-                        <span class="rowArrow"><span>→</span>
+                </a>
+            </div>
+                <a href="https://aeramusicfrontend.vercel.app/" target="_blank" class="projectLinks projectRowContainer">
+        
+                    <div class="projectRow" data-image="./aeraMusic.webp">
+                        <span class="smallFont rowIndex">03</span>
+                        <h3 class="mainFont rowTitle">Aera Music</h3>
+                        <span class="smallFont rowTag">Focus Music Webapp</span>
+                        <span class="smallFont rowYear">2026</span>
                 </a>
         </div>
-        </a>
-        <a href="https://x2ystudio.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
-
-            <div class="projectRow" data-image="./x2y.webp">
-                <span class="smallFont rowIndex">03</span>
-                <h3 class="mainFont rowTitle">X2y Music Studio</h3>
-                <span class="smallFont rowTag">Entertainment Studio Design Page</span>
-                <span class="smallFont rowYear">2024</span>
-                <a class="rowArrow"><span>→</span></a>
-            </div>
-        </a>
-
-        <a href="https://mirandaanime.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
-            <div class="projectRow" data-image="./miranda.webp">
-                <span class="smallFont rowIndex">04</span>
-                <h3 class="mainFont rowTitle">Miranda</h3>
-                <span class="smallFont rowTag">Anime Concept Design</span>
-                <span class="smallFont rowYear">2024</span>
-                <a class="rowArrow"><span>→</span></a>
-            </div>
-        </a>
-
-
-    </div>
     <div class="mobileFeatured">
         <a href="https://mirandaanime.netlify.app/" class="projectLinks">
 
@@ -290,24 +360,27 @@
         </div>
         <div class="contactLink">
             <ul>
-                <li> <a href="#homeSection">Home</a></li>
-                <li><a href="#aboutSection">About</a></li>
+                <li> <a href="#homeSection">yadavmihir30@gmail.com</a></li>
+                <li><a href="#aboutSection">+917767043214</a></li>
                 <!-- <li><a href="contactSection">Contact</a></li> -->
                 <!-- <li>Blog</li> -->
             </ul>
         </div>
         <hr>
         <div class="contactBottom">
-            <div class="email">
-                <a href="mailto:yadavmihir30@gmail.com">
-                    <img src="./email.svg" alt="Email" width="30">
-                </a>
-            </div>
+            <!-- <h2>Design & built by Mihir</h2> -->
+            <div class="flex">
+                <div class="email">
+                    <a href="mailto:yadavmihir30@gmail.com">
+                        <img src="./email.svg" alt="Email" width="30">
+                    </a>
+                </div>
 
-            <div class="contactNo">
-                <a href="tel:+917767043214">
-                    <img src="./call.svg" alt="Call" width="30">
-                </a>
+                <div class="contactNo">
+                    <a href="tel:+917767043214">
+                        <img src="./call.svg" alt="Call" width="30">
+                    </a>
+                </div>
             </div>
 
             <!-- <div class="instagram">

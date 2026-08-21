@@ -1,40 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --bg: #10100e;
     --line: rgba(255, 255, 255, 0.35);
-    --offWhite: #ffffe3
+    --offWhite: #ffffe3;
+    --commonTitle: 3.5vw;
 }
 
-@font-face {
-    font-family: 'ClashRegular';
-    src: url('./ClashDisplay-Regular.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'ClashSemibold';
-    src: url('./ClashDisplay-Semibold.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'ClashMedium';
-    src: url('./ClashDisplay-Medium.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'ClashLight';
-    src: url('./ClashDisplay-Light.otf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
 
 @font-face {
     font-family: 'SatoshiRegular';
@@ -82,7 +54,15 @@ html {
     min-width: 100px;
     border-radius: 20px;
     outline: none;
-    border: 0;
+    background-color: transparent;
+    border: 1px solid var(--bg);
+    transition: background-color 0.2s linear;
+    margin: 10px 0;
+}
+
+.secondaryBtn:hover {
+    background-color: var(--bg);
+    color: var(--offWhite);
 }
 
 .smooth-wrapper {
@@ -142,7 +122,7 @@ html {
     color: var(--offWhite);
     text-transform: capitalize;
     font-size: 1.2rem;
-    font-family: "ClashLight";
+    font-family: "Archivo", sans-serif;
 }
 
 .logo {
@@ -183,49 +163,31 @@ html {
 }
 
 .card {
-    min-width: 220px;
-    min-height: 300px;
-    width: 20vw;
-    height: 45vh;
+    width: 25vw;
+    height: 60vh;
     position: absolute;
     opacity: 0;
-    transform: scale(0.15) rotate(0deg);
-    filter: blur(12px);
-    will-change: transform, filter, opacity;
     position: absolute;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://images.pexels.com/photos/30858727/pexels-photo-30858727.jpeg");
 }
 
-
-
-#card-1 {
-    /* background-image: url('https://images.pexels.com/photos/34765157/pexels-photo-34765157.jpeg'); */
-    background-color: #C8EDEC;
+.card h2 {
+    font-size: 3vw;
+    color: var(--offWhite);
+    font-family: var(--commonTitle);
 }
-
-#card-2 {
-    /* background-image: url('https://images.pexels.com/photos/34765157/pexels-photo-34765157.jpeg'); */
-    background-color: #EDB1AD;
-}
-
-#card-3 {
-    background-image: url('https://images.pexels.com/photos/34765157/pexels-photo-34765157.jpeg');
-}
-
-#card-4 {
-    /* background-image: url('https://images.pexels.com/photos/34765157/pexels-photo-34765157.jpeg'); */
-    background-color: #987370
-}
-
-
 
 .hero {
     height: 100vh;
     background-color: var(--bg);
-    padding: 2rem;
+    padding: 5vw 1vw;
     overflow: hidden;
     /* background-color: yellow; */
 }
@@ -234,26 +196,17 @@ html {
     display: none;
 }
 
-.mobileMarquee {
-    display: none;
-}
+
 
 #star {
     width: 5vw;
 }
 
-.heroTop {
-    position: relative;
-}
-
-.animationWrapper {
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-}
 
 
 
+
+/* 
 .tagline {
     font-size: 2vw;
     text-align: right;
@@ -261,40 +214,36 @@ html {
     position: absolute;
     left: 20%;
     color: var(--offWhite);
-    font-family: "ClashLight";
+    font-family: "Archivo";
     overflow: hidden;
-}
+} */
 
 .heroText {
-    font-size: 7vw;
+    font-size: 8vw;
     color: var(--offWhite);
     text-transform: uppercase;
     font-weight: 100;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -30%;
 }
 
-.heroBottom {
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.heroTextBottom {
+    font-size: 8vw;
+    color: var(--offWhite);
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    right: -30%
 }
 
-.heroBottom .date {
-    font-family: "ClashLight";
-    font-size: 1.2rem;
-}
 
-.bottomRight {
-    display: flex;
-    justify-content: flex-end;
-    gap: 1rem;
-    align-items: center;
-    /* background-color: yellow; */
-}
 
 .heroBottom div {
 
     color: var(--offWhite);
+    background-color: red;
     text-transform: uppercase;
     font-size: 2vw;
 }
@@ -309,7 +258,7 @@ html {
 
 .word {
     display: inline-block;
-    font-family: "ClashLight";
+    font-family: "Archivo", sans-serif;
     min-width: 12vw;
     text-align: left;
     will-change: transform, opacity;
@@ -318,19 +267,29 @@ html {
 
 .about {
     padding: 5vw;
+    position: relative;
 }
 
 
+.aboutContent {
+    /* background-color: green; */
+}
 
-hr {
-    margin-bottom: 4rem
+.absouluteLetter {
+    font-size: 15vw;
+    position: absolute;
+    top: 2%;
+    z-index: 1;
+    right: 30%;
+    opacity: 0.1;
 }
 
 .aboutContent h2 {
-    font-size: 5vw;
+    font-size: var(--commonTitle);
     text-transform: uppercase;
     color: var(--bg);
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    /* background-color: green; */
 }
 
 #aboutDescWrapper {
@@ -338,18 +297,31 @@ hr {
     justify-content: space-between;
     flex-direction: column;
     align-items: flex-end;
+    /* background-color: red; */
 }
 
 .aboutDescription {
-    font-family: "ClashLight";
-    font-size: 2.2rem;
+    font-family: "Archivo", sans-serif;
+    font-size: 1.5rem;
     position: relative;
+    /* background-color: yellow; */
     padding: 0 1rem;
     margin-top: 1rem;
     max-width: 30%;
     text-align: right;
+    line-height: 3rem;
     right: 0;
 }
+
+.aboutParagraph {
+    font-size: 1.5rem;
+    display: inline-block;
+    max-width: 40%;
+    line-height: 3rem;
+    font-family: "Archivo", sans-serif;
+
+}
+
 
 
 #flower {
@@ -360,6 +332,22 @@ hr {
 #flower:hover {
     animation-play-state: paused;
 }
+
+.flipChar {
+    display: inline-block;
+    perspective: 400px;
+}
+
+.aboutImg {
+    /* background-color: red; */
+    text-align: center;
+}
+
+.aboutImg #aboutImg {
+    border-radius: 1rem;
+    max-width: 90vw;
+}
+
 
 @keyframes rotate {
 
@@ -384,24 +372,6 @@ hr {
 
 
 
-.flipChar {
-    display: inline-block;
-    perspective: 400px;
-}
-
-.aboutImg #aboutImg {
-    border-radius: 1rem;
-    max-width: 70vw;
-}
-
-.aboutParagraph {
-    font-size: 2.2rem;
-    display: inline-block;
-    max-width: 40%;
-    line-height: 4.4rem;
-    font-family: "ClashRegular";
-
-}
 
 
 
@@ -424,10 +394,9 @@ hr {
 
 #circle {
     position: absolute;
-    right: 5%;
-    /* top: 20%; */
-    opacity: 0.2;
-    width: 100vw;
+    left: 15%;
+    opacity: 0.1;
+    width: 15vw;
     z-index: -1;
 }
 
@@ -435,7 +404,7 @@ hr {
     color: rgba(212, 212, 212, 0.748);
     font-size: 2vw;
     text-transform: capitalize;
-    font-family: "ClashRegular";
+    font-family: "Archivo", sans-serif;
     position: relative;
     z-index: 20;
 }
@@ -450,9 +419,27 @@ hr {
     height: 10vw;
 }
 
+.workEx {
+    /* background-color: yellow; */
+}
+
+.workList {
+    /* background-color: green; */
+}
+
+/* Design Page Seperator */
+.designPageSeperator{
+    background-image: url('./pageseperator.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 
-.featured {
+
+.featured,
+.workEx {
     padding: 8vw 5vw;
     min-height: 40vh;
     /* background-color: red; */
@@ -471,7 +458,7 @@ hr {
     letter-spacing: 0.15em;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-    font-family: "ClashRegular";
+    font-family: "Archivo";
 }
 
 .featuredTitle {
@@ -483,10 +470,11 @@ hr {
 .featuredCount {
     color: #888;
     font-size: 1.22rem;
-    font-family: "ClashRegular";
+    font-family: "Archivo";
 }
 
-.projectList {
+.projectList,
+.workList {
     border-top: 1px solid #2a2a2a;
     position: relative;
     /* background-color: yellow; */
@@ -505,7 +493,8 @@ hr {
     width: 100%;
 }
 
-.projectRow {
+.projectRow,
+.workRow {
     /* background-color: green; */
     display: flex;
     align-items: center;
@@ -517,9 +506,37 @@ hr {
     position: relative;
 }
 
+.workHeader {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+}
+
+.workList a {
+    text-decoration: none;
+    color: var(--bg);
+}
+
+.workYear {
+    color: #555;
+    font-size: 1rem;
+    text-align: right;
+    font-family: "Archivo";
+    text-decoration: none;
+
+}
+
+.workRow {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+}
+
 .projectImage {
     width: 40vh;
-    min-height: 300px;
+    min-height: 30vh;
     position: absolute;
     z-index: 200;
     left: 50%;
@@ -529,6 +546,7 @@ hr {
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
+    background-size: cover;
 }
 
 .mobileFeatured {
@@ -538,13 +556,14 @@ hr {
 .rowIndex {
     color: #666;
     width: 2rem;
-    font-family: "ClashRegular";
+    font-family: "Archivo";
     font-size: 1rem;
     text-decoration: none;
 }
 
 .rowTitle {
     flex: 1;
+    /* background-color: red; */
     text-decoration: none;
     font-size: 2.5vw;
     font-weight: 500;
@@ -556,7 +575,7 @@ hr {
     color: #888;
     text-decoration: none;
     font-size: 1rem;
-    font-family: "ClashRegular";
+    font-family: "Archivo";
 }
 
 .rowYear {
@@ -565,7 +584,7 @@ hr {
     font-size: 1rem;
     width: 3rem;
     text-align: right;
-    font-family: "ClashRegular";
+    font-family: "Archivo";
 }
 
 .rowArrow {
@@ -634,8 +653,13 @@ hr {
 .contact {
     background-color: var(--bg);
     padding: 4rem;
+    /* background-color: green; */
 }
 
+.contact h2 {
+    color: var(--offWhite);
+    text-align: center;
+}
 
 
 .contactTitle {
@@ -661,7 +685,7 @@ hr {
 .email {
     color: var(--offWhite);
     font-size: 1vw;
-    font-family: "ClashLight";
+    font-family: "Archivo";
 }
 
 .contactLink ul {
@@ -675,7 +699,7 @@ hr {
 .contactLink ul li {
     display: inline-block;
     margin-bottom: 1rem;
-    font-family: "ClashLight";
+    font-family: "Archivo";
 }
 
 ul li a:focus {
@@ -701,7 +725,16 @@ ul li a:focus {
 
 .contactBottom {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    /* background-color: yellow; */
+    padding: 20px 0;
+    ;
+}
+
+.contactBottom .flex {
+    display: flex;
     align-items: center;
     gap: 2rem;
 }
@@ -711,54 +744,30 @@ ul li a:focus {
 
 
 
-
 @media (max-width:729px) {
-    #star {
-        width: 10vw;
-    }
+
 
     .card {
-        height: 30vh
+        height: 50vh;
+        /* background-color: yellow; */
     }
 
+    .card h2 {
+        font-size: 10vw;
+    }
 
-
-    .heroText {
+    .heroText,
+    .heroTextBottom {
         font-size: 15vw;
     }
-
-    .animationWrapper {
-        justify-content: center;
-    }
-
-
 
     .hero {
         height: 100vh;
         padding: 1rem;
     }
 
-    .tagline {
-        font-size: 7vw;
-        width: 100%;
-        left: 0;
-        text-align: center;
-        position: relative;
-    }
-
     .menu a {
         color: var(--bg);
-    }
-
-
-    .cards {
-        margin-top: 1rem;
-        width: 80%;
-        height: 50%;
-        position: relative;
-        background-size: cover;
-        background-position: center;
-        background-image: url('https://images.pexels.com/photos/34765157/pexels-photo-34765157.jpeg');
     }
 
     .navbar {
@@ -815,7 +824,7 @@ ul li a:focus {
     }
 
     .logoSmallScreen {
-        font-family: "ClashRegular";
+        font-family: "Archivo";
         color: var(--bg);
         font-size: 8vw;
 
@@ -823,7 +832,7 @@ ul li a:focus {
 
     .mobileNav ul li {
         font-size: 15vw;
-        font-family: "ClashRegular";
+        font-family: "Archivo";
         color: var(--bg);
         margin-bottom: 2rem;
     }
@@ -845,22 +854,8 @@ ul li a:focus {
         max-height: 100vh;
     }
 
-    .mobileMarquee {
-        width: 100%;
-        height: 20vh;
-        /* background-color: red; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 1rem;
-    }
 
-    .mobileMarquee p {
-        font-size: 7vw;
-        max-width: 80%;
-        color: var(--offWhite);
-        font-family: "ClashRegular";
-    }
+
 
     .heroBottom {
         flex-direction: column;
@@ -878,17 +873,7 @@ ul li a:focus {
         min-width: 45vw;
     }
 
-    .heroBottom .date {
-        font-size: 5vw;
-        order: 2;
-    }
 
-    #card-1,
-    #card-2,
-    #card-4,
-    #card-3 {
-        display: none;
-    }
 
     #mobileCard {
         display: block;
@@ -993,7 +978,7 @@ ul li a:focus {
 
         & span {
             font-size: 5vw;
-            font-family: "ClashLight";
+            font-family: "Archivo";
             font-weight: 500;
         }
     }
@@ -1051,10 +1036,10 @@ ul li a:focus {
 
     .card {
         min-width: 420px;
+        /* background-color: yellow; */
     }
 
-    .heroBottom div,
-    .date {
+    .heroBottom div {
         font-size: 2rem !important;
     }
 

@@ -76,66 +76,11 @@ document.fonts.ready.then(() => {
 const heroCards = () => {
   const cards = gsap.utils.toArray(".card");
   console.log(cards);
-  gsap.set(cards, {
-    scale: 0.15,
+  gsap.to(cards, {
+    scale: 1,
     opacity: 1,
-    rotate: 0,
-    filter: "blur(12px)",
   });
-
-  const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
-
-  cards.forEach((card, i) => {
-    tl.to(
-      card,
-      {
-        scale: 1,
-        opacity: 1,
-        filter: "blur(0px)",
-        duration: 2,
-      },
-      i * 0.5,
-    ).to(
-      card,
-      {
-        rotate: -10,
-        duration: 0.6,
-        ease: "back.out(1.7)",
-      },
-      i * 0.5 + 0.6,
-    );
-  });
-
-  // Fan Spread
-  const spread = [
-    { x: 120, y: 0, rotate: 30 },
-    { x: 80, y: 0, rotate: 20 },
-    { x: 40, y: 0, rotate: 10 },
-    { x: 0, y: 0, rotate: 0 },
-  ];
-  cardsContainer.addEventListener("mouseenter", () => {
-    cards.forEach((card, i) => {
-      gsap.to(card, {
-        x: spread[i].x,
-        y: spread[i].y,
-        rotate: spread[i].rotate,
-        duration: 0.5,
-        ease: "power3.out",
-      });
-    });
-  });
-
-  cardsContainer.addEventListener("mouseleave", () => {
-    cards.forEach((card) => {
-      gsap.to(card, {
-        x: 0,
-        y: 0,
-        rotate: -10,
-        duration: 0.5,
-        ease: "power3.inOut",
-      });
-    });
-  });
+  
 };
 
 // Featured Projects
@@ -212,24 +157,21 @@ const interactions = () => {
   });
 };
 
-const split = SplitText.create(".tagline", { type: "chars" });
+// const split = SplitText.create(".tagline", { type: "chars" });
 
-gsap.from(split.chars, {
-  yPercent: -500,
-  stagger: {
-    each: 0.05,
-    from: "start",
-  },
-  duration: 1,
-  ease: "power4.out",
-  repeat: -1,
-  yoyo: true,
-  repeatDelay: 5,
-});
-const dateEle = document.querySelector(".date");
-const currentDate = new Date().toLocaleDateString("en-GB");
-console.log(currentDate);
-dateEle.append(`${currentDate}`);
+// gsap.from(split.chars, {
+//   yPercent: 10,
+//   opacity:0,
+//   stagger: {
+//     each: 0.05,
+//     from: "start",
+//   },
+//   duration: 1,
+//   ease: "power4.out",
+//   repeat: -1,
+//   yoyo: true,
+//   repeatDelay: 5,
+// });
 
 const circle = document.querySelector("#circle");
 
