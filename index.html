@@ -1,421 +1,720 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uicraft.space | Mihir Yadav</title>
-    <link rel="icon" type="image/png" href="./favicon.svg">
-    <link rel="stylesheet" href="index.css">
-</head>
 
-<body>
-    <!-- navbar -->
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
     <nav class="navbar">
-        <ul>
-            <li>
-                <h2 class="logo menuItems">M<div class="dot"></div>Y</h2>
-            </li>
-            <li class="menu">
-                <a href="#featuredSection" class="menuItems">Featured</a>
-                <a href="#aboutSection" class="menuItems">About</a>
-                <!-- <a href="">Testi</a> -->
-                <a href="#contactSection" class="menuItems">Contact</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <h2 class="logo menuItems">
+            M
+            <div class="dot"></div>
+            Y
+          </h2>
+        </li>
+
+        <li class="menu">
+          <a href="#featuredSection" class="menuItems">Featured</a>
+          <a href="#aboutSection" class="menuItems">About</a>
+          <a href="#contactSection" class="menuItems">Contact</a>
+        </li>
+      </ul>
     </nav>
+
     <!-- Mobile Nav -->
     <nav class="mobileNav">
-        <ul>
-            <li class="menuHeader">
-                <h2 class="logoSmallScreen">M<div class="dot"></div>Y</h2>
-                <div class="closeBtn" onclick="toggleMenu()">
-                    <img src="./closeBtn.svg" alt="menu" class="menuIcons">
-                </div>
-            </li>
-            <li class="menu">
-                <a onclick="toggleMenu()" href="#featuredSection">Featured</a>
-                <a onclick="toggleMenu()" href="#aboutSection">About</a>
-                <!-- <span onclick="toggleMenu()" href="">Menu</span> -->
-                <a onclick="toggleMenu()" href="contactSection">Contact</a>
-            </li>
-        </ul>
+      <ul>
+        <li class="menuHeader">
+          <h2 class="logoSmallScreen">
+            M
+            <div class="dot"></div>
+            Y
+          </h2>
+
+          <div class="closeBtn" onclick="toggleMenu()">
+            <img src="./closeBtn.svg" alt="Close menu" class="menuIcons" />
+          </div>
+        </li>
+
+        <li class="menu">
+          <a onclick="toggleMenu()" href="#featuredSection"> Featured </a>
+
+          <a onclick="toggleMenu()" href="#aboutSection"> About </a>
+
+          <a onclick="toggleMenu()" href="#contactSection"> Contact </a>
+        </li>
+      </ul>
     </nav>
 
+    <!-- Smooth Wrapper -->
     <div class="smooth-wrapper" id="smooth-wrapper">
-        <div id="smooth-content">
-            <!-- Hero -->
-            <main class="mainContainer">
-                <div class="menuHamburger" onclick="toggleMenu()">
-                    <img src="./hamburger.svg" alt="menu" class="menuIcons">
-                </div>
+      <div id="smooth-content">
+        <!-- Hero -->
+        <main class="mainContainer" id="homeSection">
+          <div class="menuHamburger" onclick="toggleMenu()">
+            <img src="./hamburger.svg" alt="Open menu" class="menuIcons" />
+          </div>
 
-                <section class="hero">
-                    <div class="cards">
-                        <h1 class="mainFont heroText">Des<span class="flipChar">i</span>gn</h1>
-                        <div class="card">
-                            <h2>that</h2>
-                        </div>
-                        <h1 class="mainFont heroTextBottom"> Matters</h1>
-                    </div>
+          <section class="hero">
+            <div class="cards">
+              <h1 class="mainFont heroText">
+                Des<span class="flipChar">i</span>gn
+              </h1>
 
-                    <!-- <div class="heroBottom">
+              <div class="card">
+                <h2>that</h2>
+              </div>
+
+              <h1 class="mainFont heroTextBottom">Matters</h1>
+            </div>
+
+            <!--
+                    <div class="heroBottom">
                         <div class="bottomRight">
                             <div class="leadWord">Frontend</div>
-                            <div class="changing"> <span class="word"> </div>
+                            <div class="changing">
+                                <span class="word"></span>
+                            </div>
                         </div>
-                    </div> -->
-                </section>
-            </main>
-
-            <!-- About Me -->
-            <section class="section about" id="aboutSection">
-                <div class="absouluteLetter">M</div>
-                <div class="aboutContent">
-                    <h2>About Me</h2>
-                    <p class="aboutParagraph">I thrive at the intersection of creativity and technology. <br>Whether
-                        it's shaping an idea, designing meaningful interactions or bringing them to life with code, I
-                        care about every detail.</p> <br>
-                    <button class="secondaryBtn">Resume</button>
-                    <div id="aboutDescWrapper">
-                        <img src="./flower.svg" width="100" alt="flower" id="flower">
-                        <p class="aboutDescription">Half layouts and color, half logic and motion — built start to
-                            finish , by one person.</p>
                     </div>
+                    -->
+          </section>
+        </main>
+
+        <!-- About Me -->
+        <section class="section about" id="aboutSection">
+          <div class="absouluteLetter">M</div>
+
+          <div class="aboutContent">
+            <h2>About Me</h2>
+
+            <p class="aboutParagraph">
+              I thrive at the intersection of creativity and technology.
+              <br />
+              Whether it's shaping an idea, designing meaningful interactions or
+              bringing them to life with code, I care about every detail.
+            </p>
+
+            <br />
+
+            <button class="secondaryBtn">Resume</button>
+
+            <div id="aboutDescWrapper">
+              <img
+                src="./flower.svg"
+                width="100"
+                alt="Decorative flower"
+                id="flower"
+              />
+
+              <p class="aboutDescription">
+                Half layouts and color, half logic and motion — built start to
+                finish, by one person.
+              </p>
+            </div>
+          </div>
+
+          <div class="aboutImg">
+            <img
+              src="https://images.pexels.com/photos/17136623/pexels-photo-17136623.jpeg"
+              id="aboutImg"
+              alt="About Mihir"
+            />
+          </div>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="workEx" id="workexSection">
+          <div class="workHeader">
+            <h2 class="mainFont featuredTitle">WorkEx</h2>
+
+            <span class="smallFont workDescription">
+              A few chapters along the way. A little untidy, the way a real
+              career actually is.
+            </span>
+
+            <span class="smallFont featuredCount"> (04) </span>
+          </div>
+
+          <div class="workList">
+            <!-- Work Experience 01 -->
+            <a
+              href="https://sundownstudiodesign.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks projectRowContainer"
+            >
+              <div class="workRow" data-image="./sundown.webp">
+                <h3 class="mainFont workTitle">
+                  Software Developer - Frontend
+                </h3>
+
+                <span class="smallFont workYear"> Feb 2024 - Present </span>
+              </div>
+            </a>
+
+            <!-- Work Experience 02 -->
+            <a
+              href="https://sundownstudiodesign.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks projectRowContainer"
+            >
+              <div class="workRow" data-image="./sundown.webp">
+                <h3 class="mainFont workTitle">
+                  Software Test Engineer - Automation
+                </h3>
+
+                <span class="smallFont workYear"> June 2024 - April 2025 </span>
+              </div>
+            </a>
+
+            <!-- Work Experience 03 -->
+            <a
+              href="https://rosahotels.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks projectRowContainer"
+            >
+              <div class="workRow" data-image="./rosa.webp">
+                <h3 class="mainFont workTitle">Summer Intern - Frontend</h3>
+
+                <span class="smallFont workYear"> Aug 2023 - Sept 2023 </span>
+              </div>
+            </a>
+
+            <!-- Work Experience 04 -->
+            <a
+              href="https://rosahotels.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks projectRowContainer"
+            >
+              <div class="workRow" data-image="./rosa.webp">
+                <h3 class="mainFont workTitle">Freelance Frontend Developer</h3>
+
+                <span class="smallFont workYear"> Jan 2021 - Nov 2022 </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Mobile Work Projects -->
+          <div class="mobileFeatured">
+            <a
+              href="https://mirandaanime.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./miranda.webp" alt="Miranda Anime" />
+
+                <div class="projectContent">
+                  <h3>Miranda Anime</h3>
+
+                  <span>Design Concept</span>
+                  <span>2024</span>
                 </div>
-                <div class="aboutImg">
-                    <img src="https://images.pexels.com/photos/17136623/pexels-photo-17136623.jpeg" id="aboutImg" />
+              </div>
+            </a>
 
+            <a
+              href="https://sundownstudiodesign.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./sundown.webp" alt="Sundown Studio" />
+
+                <div class="projectContent">
+                  <h3>Sundown Studio</h3>
+
+                  <span>Design Concept</span>
+                  <span>2025</span>
                 </div>
-            </section>
+              </div>
+            </a>
 
+            <a
+              href="https://rosahotels.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./rosa.webp" alt="Rosa Hotels" />
 
-            <!-- Work Experience -->
-            <section class="workEx" id="workexSection">
-                <div class="workHeader">
-                    <h2 class="mainFont featuredTitle">WorkEx</h2>
-                    <span class="smallFont workDescription">A few chapters along the way. A little untidy, the way a
-                        real career actually is.</span>
-                    <span class="smallFont featuredCount">(04)</span>
+                <div class="projectContent">
+                  <h3>Rosa Hotels</h3>
+
+                  <span>Design Concept</span>
+                  <span>2025</span>
                 </div>
+              </div>
+            </a>
 
-                <div class="workList">
-                    <a href="https://sundownstudiodesign.netlify.app/" target="_blank"
-                        class="projectLinks projectRowContainer">
-                        <div class="workRow" data-image="./sundown.webp">
-                            <h3 class="mainFont workTitle">Software Developer - Frontend</h3>
-                            <span class="smallFont workYear">Feb 2024 - Present</span>
-                        </div>
-                    </a>
-                    <a href="https://sundownstudiodesign.netlify.app/" target="_blank"
-                        class="projectLinks projectRowContainer">
-                        <div class="workRow" data-image="./sundown.webp">
-                            <h3 class="mainFont workTitle">Software Test Engineer - Automation</h3>
-                            <span class="smallFont workYear">June 2024 - April 2025</span>
-                        </div>
-                    </a>
+            <a
+              href="https://x2ystudio.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./x2y.webp" alt="X2Y Music Studio" />
 
-                    <a href="https://rosahotels.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
-                        <div class="workRow" data-image="./rosa.webp">
-                            <h3 class="mainFont workTitle">Summer Intern - Frontend</h3>
-                            <span class="smallFont workYear">Aug 2023 - Sept 2023</span>
-                        </div>
-                    </a>
-                    <a href="https://rosahotels.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
-                        <div class="workRow" data-image="./rosa.webp">
-                            <h3 class="mainFont workTitle">Freelance Frontend Developer</h3>
-                            <span class="smallFont workYear">Jan 2021 - Nov 2022</span>
-                        </div>
-                    </a>
+                <div class="projectContent">
+                  <h3>X2Y Music Studio</h3>
 
-
-
-
+                  <span>Design Concept</span>
+                  <span>2025</span>
                 </div>
+              </div>
+            </a>
+          </div>
+        </section>
 
-                <div class="mobileFeatured">
-                    <a href="https://mirandaanime.netlify.app/" class="projectLinks">
+        <!-- Quote Section -->
+        <section class="quote" id="quoteSection">
+          <img
+            src="./circle_2.svg"
+            alt="Decorative circle"
+            class="interaction"
+            id="circle"
+          />
+
+          <div class="quoteFlow">
+            <div class="wrapper">
+              <span class="quoteWord">Good</span>
+              <span class="quoteWord">Design is</span>
+              <span class="quoteWord">hard</span>
+              <span class="quoteWord">to notice</span>
+              <span class="quoteWord">because</span>
+              <span class="quoteWord">it fits our</span>
+              <span class="quoteWord">needs so well</span>
+              <span class="quoteWord">that design</span>
+              <span class="quoteWord">is invisible.</span>
+            </div>
+
+            <div class="mobileQuoteImg">
+              <video
+                src="./mobileQuoteVid.webm"
+                autoplay
+                loop
+                muted
+                playsinline
+              ></video>
+            </div>
+          </div>
+        </section>
+
+        <!-- Moving Marquee -->
+        <section class="marquee">
+          <div class="marqueeContainer">
+            <h1>Creativity</h1>
+
+            <img
+              src="./halfcircle.svg"
+              width="150"
+              alt="Half circle"
+              class="interaction"
+            />
+
+            <h1>Design</h1>
+
+            <img src="./star.svg" width="120" alt="Star" class="interaction" />
+
+            <h1>UX</h1>
+
+            <img
+              src="./square.svg"
+              width="120"
+              alt="Square"
+              class="interaction"
+            />
+
+            <h1>Code</h1>
+
+            <img
+              src="./flower.svg"
+              width="100"
+              alt="Flower"
+              class="interaction"
+            />
+
+            <h1>Front-end</h1>
+
+            <img
+              src="./clover.svg"
+              width="120"
+              alt="Clover"
+              class="interaction"
+            />
+          </div>
+
+          <div class="marqueeContainer">
+            <h1>Creativity</h1>
+
+            <img
+              src="./halfcircle.svg"
+              width="150"
+              alt="Half circle"
+              class="interaction"
+            />
+
+            <h1>Design</h1>
+
+            <img src="./star.svg" width="120" alt="Star" class="interaction" />
+
+            <h1>UX</h1>
+
+            <img
+              src="./square.svg"
+              width="120"
+              alt="Square"
+              class="interaction"
+            />
+
+            <h1>Code</h1>
+
+            <img
+              src="./flower.svg"
+              width="100"
+              alt="Flower"
+              class="interaction"
+            />
+
+            <h1>Front-end</h1>
+
+            <img
+              src="./clover.svg"
+              width="120"
+              alt="Clover"
+              class="interaction"
+            />
+          </div>
+
+          <div class="marqueeContainer">
+            <h1>Creativity</h1>
+
+            <img
+              src="./halfcircle.svg"
+              width="150"
+              alt="Half circle"
+              class="interaction"
+            />
+
+            <h1>Design</h1>
+
+            <img src="./star.svg" width="120" alt="Star" class="interaction" />
+
+            <h1>UX</h1>
+
+            <img
+              src="./square.svg"
+              width="120"
+              alt="Square"
+              class="interaction"
+            />
+
+            <h1>Code</h1>
+
+            <img
+              src="./flower.svg"
+              width="100"
+              alt="Flower"
+              class="interaction"
+            />
+
+            <h1>Front-end</h1>
+
+            <img
+              src="./clover.svg"
+              width="120"
+              alt="Clover"
+              class="interaction"
+            />
+          </div>
+        </section>
+
+        <!-- Page Design Separator -->
+        <section class="designPageSeperator section"></section>
+
+        <!-- Featured Projects -->
+        <section class="featured" id="featuredSection">
+          <div class="featuredHeader">
+            <span class="smallFont featuredLabel"> Selected Work </span>
+
+            <h2 class="mainFont featuredTitle">Featured</h2>
+
+            <span class="smallFont featuredCount"> (04) </span>
+          </div>
+
+          <div class="projectList">
+            <!-- Project Hover Image -->
+            <div class="projectImage"></div>
+
+            <!-- Project 01 -->
+            <a
+              href="https://sundownstudiodesign.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks projectRowContainer"
+            >
+              <div class="projectRow" data-image="./sundown.webp">
+                <span class="smallFont rowIndex"> 01 </span>
+
+                <h3 class="mainFont rowTitle">Sundown Studio</h3>
+
+                <span class="smallFont rowTag"> Concept Website </span>
+
+                <span class="smallFont rowYear"> 2025 </span>
+              </div>
+            </a>
+
+            <!-- Project 02 -->
+            <a
+              href="https://rosahotels.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks projectRowContainer"
+            >
+              <div class="projectRow" data-image="./rosa.webp">
+                <span class="smallFont rowIndex"> 02 </span>
+
+                <h3 class="mainFont rowTitle">Rosa Hotels</h3>
+
+                <span class="smallFont rowTag"> Concept Hotel Website </span>
+
+                <span class="smallFont rowYear"> 2025 </span>
+              </div>
+            </a>
+
+            <!-- Project 03 -->
+            <a
+              href="https://aeramusicfrontend.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks projectRowContainer"
+            >
+              <div class="projectRow" data-image="./aeraMusic.webp">
+                <span class="smallFont rowIndex"> 03 </span>
+
+                <h3 class="mainFont rowTitle">Aera Music</h3>
+
+                <span class="smallFont rowTag"> Focus Music Webapp </span>
+
+                <span class="smallFont rowYear"> 2026 </span>
+              </div>
+            </a>
+          </div>
+
+          <!-- Mobile Featured Projects -->
+          <div class="mobileFeatured">
+            <!-- Miranda -->
+            <a
+              href="https://mirandaanime.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./miranda.webp" alt="Miranda Anime" />
+
+                <div class="projectContent">
+                  <h3>Miranda Anime</h3>
+
+                  <span>Design Concept</span>
+                  <span>2024</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Sundown -->
+            <a
+              href="https://sundownstudiodesign.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./sundown.webp" alt="Sundown Studio" />
+
+                <div class="projectContent">
+                  <h3>Sundown Studio</h3>
+
+                  <span>Design Concept</span>
+                  <span>2025</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Rosa -->
+            <a
+              href="https://rosahotels.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./rosa.webp" alt="Rosa Hotels" />
+
+                <div class="projectContent">
+                  <h3>Rosa Hotels</h3>
+
+                  <span>Design Concept</span>
+                  <span>2025</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- X2Y -->
+            <a
+              href="https://x2ystudio.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="projectLinks"
+            >
+              <div class="projectContainer">
+                <img src="./x2y.webp" alt="X2Y Music Studio" />
+
+                <div class="projectContent">
+                  <h3>X2Y Music Studio</h3>
+
+                  <span>Design Concept</span>
+                  <span>2025</span>
+                </div>
+              </div>
+            </a>
+
+            <!--
+                    <a
+                        href="https://x2ystudio.netlify.app/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="projectLinks"
+                    >
+
                         <div class="projectContainer">
-                            <img src="./miranda.webp" alt="Miranda">
+
+                            <img
+                                src="./x2y.webp"
+                                alt="Game"
+                            >
+
                             <div class="projectContent">
-                                <h3>Miranda Anime</h3>
-                                <span>Design Concept</span>
+
+                                <h3>R</h3>
+
+                                <span>Game</span>
                                 <span>2024</span>
+
                             </div>
+
                         </div>
+
                     </a>
+                    -->
+          </div>
+        </section>
 
-                    <a href="https://sundownstudiodesign.netlify.app/" class="projectLinks">
-                        <div class="projectContainer">
-                            <img src="./sundown.webp" alt="sundown studio">
-                            <div class="projectContent">
-                                <h3>Sundown Studio</h3>
-                                <span>Design Concept</span>
-                                <span>2025</span>
-                            </div>
-                        </div>
-                    </a>
+        <!-- Contact -->
+        <section class="contact" id="contactSection">
+          <div class="contactTitleWrapper">
+            <h2 class="contactTitle">
+              Get <span class="flipChar">I</span>n Touch
+            </h2>
 
-                    <a href="https://rosahotels.netlify.app/" class="projectLinks">
-                        <div class="projectContainer">
-                            <img src="./rosa.webp" alt="Rosa Hotels">
-                            <div class="projectContent">
-                                <h3>Rosa Hotels</h3>
-                                <span>Design Concept</span>
-                                <span>2025</span>
-                            </div>
-                        </div>
-                    </a>
+            <img src="./flower.svg" alt="Decorative flower" />
+          </div>
 
-                    <a href="https://x2ystudio.netlify.app/" class="projectLinks">
-                        <div class="projectContainer">
-                            <img src="./x2y.webp" alt="x2y">
-                            <div class="projectContent">
-                                <h3>X2Y Music Studio</h3>
-                                <span>Design Concept</span>
-                                <span>2025</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </section>
-            <!-- Quote Section -->
-            <section class="quote" id="quoteSection">
-                <img src="./circle_2.svg" alt="circle" class="interaction" id="circle">
-                <div class="quoteFlow">
-                    <div class="wrapper">
-                        <span class="quoteWord">Good</span>
-                        <span class="quoteWord">Design is</span>
-                        <span class="quoteWord">hard</span>
-                        <span class="quoteWord">to notice</span>
-                        <span class="quoteWord">because</span>
-                        <span class="quoteWord">it fits our</span>
-                        <span class="quoteWord">needs so well</span>
-                        <span class="quoteWord">that design</span>
-                        <span class="quoteWord">is invisible.</span>
-                    </div>
-                    <div class="mobileQuoteImg">
-                        <video src="./mobileQuoteVid.webm" autoplay loop muted></video>
-                    </div>
-                </div>
-            </section>
-
-            <!-- MOVING MARQUEE -->
-            <section class="marquee">
-                <div class="marqueeContainer">
-                    <h1>Creativity</h1>
-                    <!-- <div class="gola"></div> -->
-                    <img src="./halfcircle.svg" width="150" alt="halfcircle" class="interaction">
-                    <h1>Design</h1>
-                    <img src="./star.svg" width="120" alt="halfcircle" class="interaction">
-                    <h1>UX</h1>
-                    <img src="./square.svg" width="120" alt="square" class="interaction">
-                    <h1>Code</h1>
-                    <img src="./flower.svg" width="100" alt="flower" class="interaction">
-                    <h1>Front-end</h1>
-                    <img src="./clover.svg" width="120" alt="clover" class="interaction">
-
-                </div>
-                <div class="marqueeContainer">
-                    <h1>Creativity</h1>
-                    <!-- <div class="gola"></div> -->
-                    <img src="./halfcircle.svg" width="150" alt="halfcircle" class="interaction">
-                    <h1>Design</h1>
-                    <img src="./star.svg" width="120" alt="halfcircle" class="interaction">
-                    <h1>UX</h1>
-                    <img src="./square.svg" width="120" alt="square" class="interaction">
-                    <h1>Code</h1>
-                    <img src="./flower.svg" width="100" alt="flower" class="interaction">
-                    <h1>Front-end</h1>
-                    <img src="./clover.svg" width="120" alt="clover" class="interaction">
-
-                </div>
-                <div class="marqueeContainer">
-                    <h1>Creativity</h1>
-                    <!-- <div class="gola"></div> -->
-                    <img src="./halfcircle.svg" width="150" alt="halfcircle" class="interaction">
-                    <h1>Design</h1>
-                    <img src="./star.svg" width="120" alt="halfcircle" class="interaction">
-                    <h1>UX</h1>
-                    <img src="./square.svg" width="120" alt="square" class="interaction">
-                    <h1>Code</h1>
-                    <img src="./flower.svg" width="100" alt="flower" class="interaction">
-                    <h1>Front-end</h1>
-                    <img src="./clover.svg" width="120" alt="clover" class="interaction">
-
-                </div>
-            </section>
-
-            <!-- Page Design Seperator -->
-
-            <section class="designPageSeperator section">
-
-            </section>
-
-            <!-- Featured Projects -->
-            <section class="featured" id="featuredSection">
-                <div class="featuredHeader">
-                    <span class="smallFont featuredLabel">Selected Work</span>
-                    <h2 class="mainFont featuredTitle">Featured</h2>
-                    <span class="smallFont featuredCount">(04)</span>
-                </div>
-
-                <div class="projectList">
-                    <div class="projectImage"></div>
-                    <a href="https://sundownstudiodesign.netlify.app/" target="_blank"
-                        class="projectLinks projectRowContainer">
-
-                        <div class="projectRow" data-image="./sundown.webp">
-                            <span class="smallFont rowIndex">01</span>
-                            <h3 class="mainFont rowTitle">Sundown Studio</h3>
-                            <span class="smallFont rowTag">Concept Website</span>
-                            <span class="smallFont rowYear">2025</span>
-                    </a>
-                </div>
-                
-                <a href="https://rosahotels.netlify.app/" target="_blank" class="projectLinks projectRowContainer">
-
-                    <div class="projectRow" data-image="./rosa.webp">
-                        <span class="smallFont rowIndex">02</span>
-                        <h3 class="mainFont rowTitle">Rosa Hotels</h3>
-                        <span class="smallFont rowTag">Concept Hotel Website</span>
-                        <span class="smallFont rowYear">2025</span>
-                </a>
-            </div>
-                <a href="https://aeramusicfrontend.vercel.app/" target="_blank" class="projectLinks projectRowContainer">
-        
-                    <div class="projectRow" data-image="./aeraMusic.webp">
-                        <span class="smallFont rowIndex">03</span>
-                        <h3 class="mainFont rowTitle">Aera Music</h3>
-                        <span class="smallFont rowTag">Focus Music Webapp</span>
-                        <span class="smallFont rowYear">2026</span>
-                </a>
-        </div>
-    <div class="mobileFeatured">
-        <a href="https://mirandaanime.netlify.app/" class="projectLinks">
-
-            <div class="projectContainer">
-                <img src="./miranda.webp" alt="Miranda">
-                <div class="projectContent">
-                    <h3>Miranda Anime</h3>
-                    <span>Design Concept</span>
-                    <span>2024</span>
-                </div>
-            </div>
-        </a>
-
-        <a href="https://sundownstudiodesign.netlify.app/" class="projectLinks">
-            <div class="projectContainer">
-                <img src="./sundown.webp" alt="sundown studio">
-                <div class="projectContent">
-                    <h3>Sundown Studio</h3>
-                    <span>Design Concept</span>
-                    <span>2025</span>
-                </div>
-            </div>
-        </a>
-        <a href="https://rosahotels.netlify.app/" class="projectLinks">
-
-            <div class="projectContainer">
-                <img src="./rosa.webp" alt="Rosa Hotels">
-                <div class="projectContent">
-                    <h3>Rosa Hotels</h3>
-                    <span>Design Concept</span>
-                    <span>2025</span>
-                </div>
-            </div>
-        </a>
-
-
-        <a href="https://x2ystudio.netlify.app/" class="projectLinks">
-            <div class="projectContainer">
-                <img src="./x2y.webp" alt="x2y">
-                <div class="projectContent">
-                    <h3>X2Y Music Studio</h3>
-                    <span>Design Concept</span>
-                    <span>2025</span>
-                </div>
-            </div>
-        </a>
-
-        <!-- <a href="https://x2ystudio.netlify.app/" class="projectLinks">
-            <div class="projectContainer">
-                <img src="./x2y.webp" alt="x2y">
-                <div class="projectContent">
-                    <h3>R</h3>
-                    <span>Game</span>
-                    <span>2024</span>
-                </div>
-            </div>
-        </a> -->
-
-
-    </div>
-    </section>
-
-    <section class="contact" id="contactSection">
-        <div class="contactTitleWrapper">
-            <h2 class="contactTitle">Get <span class="flipChar">I</span>n Touch</h2>
-            <img src="./flower.svg" alt="flower">
-        </div>
-        <div class="contactLink">
+          <div class="contactLink">
             <ul>
-                <li> <a href="#homeSection">yadavmihir30@gmail.com</a></li>
-                <li><a href="#aboutSection">+917767043214</a></li>
-                <!-- <li><a href="contactSection">Contact</a></li> -->
-                <!-- <li>Blog</li> -->
+              <li>
+                <a href="mailto:yadavmihir30@gmail.com">
+                  yadavmihir30@gmail.com
+                </a>
+              </li>
+
+              <li>
+                <a href="tel:+917767043214"> +91 7767043214 </a>
+              </li>
             </ul>
-        </div>
-        <hr>
-        <div class="contactBottom">
-            <!-- <h2>Design & built by Mihir</h2> -->
+          </div>
+
+          <hr />
+
+          <div class="contactBottom">
             <div class="flex">
-                <div class="email">
-                    <a href="mailto:yadavmihir30@gmail.com">
-                        <img src="./email.svg" alt="Email" width="30">
-                    </a>
-                </div>
+              <!-- Email -->
+              <div class="email">
+                <a href="mailto:yadavmihir30@gmail.com">
+                  <img src="./email.svg" alt="Email" width="30" />
+                </a>
+              </div>
 
-                <div class="contactNo">
-                    <a href="tel:+917767043214">
-                        <img src="./call.svg" alt="Call" width="30">
-                    </a>
-                </div>
+              <!-- Phone -->
+              <div class="contactNo">
+                <a href="tel:+917767043214">
+                  <img src="./call.svg" alt="Call" width="30" />
+                </a>
+              </div>
             </div>
-
-            <!-- <div class="instagram">
-                        <a href="https://www.instagram.com/yourusername/" target="_blank" rel="noopener noreferrer">
-                            <img src="./instagram.svg" alt="Instagram" width="30">
-                        </a>
-                    </div> -->
-        </div>
-    </section>
-
+          </div>
+        </section>
+      </div>
     </div>
 
-    </div>
-    <!-- GSAP  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
-        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Scroll Trigger   -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
-        integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"
-        integrity="sha512-t4hwZimhnCKT3YLAsEcAcRDkngVFfCcUIfNLIjklrIZAZKD+GfQMP7HbRcsVHxNS48WRBSywNU1uSM2zzLQt1Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Split Text -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
-        integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!-- Text PLUGIN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/TextPlugin.min.js"
-        integrity="sha512-8BkFnMa5pqmphA7XoSbkjP2qX7Gqlkel2C+p1g1AH1tW4cBJs2tumC0Zn9eNRBOKbe3dW9OtbYh/vpkGuZNTMw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+      integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <!-- ScrollTrigger -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"
+      integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
 
+    <!-- ScrollSmoother -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollSmoother.min.js"
+      integrity="sha512-t4hwZimhnCKT3YLAsEcAcRDkngVFfCcUIfNLIjklrIZAZKD+GfQMP7HbRcsVHxNS48WRBSywNU1uSM2zzLQt1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- SplitText -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/SplitText.min.js"
+      integrity="sha512-wOeEC+9qERAzhliwBFPDb6t8TiFFxdxG8vhK/Ygs7TuC44bpg8pg/X2/U/u+0X4fK05wb9id1EIipnF02+CFQw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- TextPlugin -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/TextPlugin.min.js"
+      integrity="sha512-8BkFnMa5pqmphA7XoSbkjP2qX7Gqlkel2C+p1g1AH1tW4cBJs2tumC0Zn9eNRBOKbe3dW9OtbYh/vpkGuZNTMw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom JS -->
     <script src="index.js"></script>
-</body>
-
+  </body>
 </html>
