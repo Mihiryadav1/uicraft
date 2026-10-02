@@ -700,7 +700,10 @@ ul li a:focus {
   /* background-color: yellow; */
   padding: 20px 0;
 }
-
+.resume a{
+    text-decoration: none;
+    color: black;
+}
 .contactBottom .flex {
   display: flex;
   align-items: center;
